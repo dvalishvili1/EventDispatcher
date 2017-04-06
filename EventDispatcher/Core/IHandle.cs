@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventDispatcher.Core
 {
+    //handler
     public interface IHandle<in T> where T : IDomainEvent
     {
         void Handle(T @event);
